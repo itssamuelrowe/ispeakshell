@@ -49,7 +49,7 @@ func processPrompt(prompt string) {
 		return
 	}
 
-	response, err := source.CallOpenAI(renderedPrompt)
+	response, err := source.CallGemini(renderedPrompt)
 	if err != nil {
 		fmt.Println(err)
 		return
